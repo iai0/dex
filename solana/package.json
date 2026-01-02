@@ -1,0 +1,17 @@
+{
+  "name": "darkstar-solana",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "anchor test --skip-local-validator",
+    "mint:devnet-spl": "ts-node tests/mint.devnet.spl.ts"
+  },
+  "devDependencies": {
+    "@coral-xyz/anchor": "^0.32.1",
+    "@solana/web3.js": "^1.95.2",
+    "@solana/spl-token": "^0.4.7",
+    "mocha": "^10.7.3",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,21 @@
+[toolchain]
+anchor_version = "0.32.1"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.devnet]
+batch = "2uDexdyb8hj7R1nrR9ESEci831Urbag5Rq12TzgZEAZq"
+factory_stub = "uY7scRK6DgtK7Ww9udtDiny7fpyEF324C78PXHnemKP"
+pair_stub = "6Wq5RBNnszrhQiR5QBbgZGgHPthLAhot2miZ1qDddKci"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[workspace]
+members = ["programs/batch", "programs/factory_stub", "programs/pair_stub"]

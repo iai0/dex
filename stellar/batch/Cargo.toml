@@ -1,0 +1,29 @@
+[package]
+name = "soroswap-batch"
+version = "0.0.1"
+authors = ["darkstar team"]
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+soroban-sdk = { version = "23.0.2" }
+soroban-token-sdk = { version = "23.0.2" }
+
+[dev_dependencies]
+soroban-sdk = { version = "23.0.2", features = ["testutils"] }
+
+[profile.release]
+opt-level = "z"
+debug = 0
+strip = "symbols"
+debug-assertions = false
+panic = "abort"
+codegen-units = 1
+lto = true
+
+[profile.release-with-logs]
+inherits = "release"
+debug-assertions = true
