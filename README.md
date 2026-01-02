@@ -1,4 +1,4 @@
-# Batch / Coinjoin with AMM Integration - Security Analysis Workspace
+# Batch / Coinjoin for AMM - Security Analysis
 
 Purpose
 - Batch/coinjoin implementations for security review.
