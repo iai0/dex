@@ -1,9 +1,10 @@
-# security analysis workspace
+# Batch / Coinjoin with AMM Integration - Security Analysis Workspace
 
 Purpose
-- Snapshot of batch/coinjoin implementations for security review.
-- Focus on core contract logic, on-chain data flows, and end-to-end token movement.
+- Batch/coinjoin implementations for security review.
+- Core contract logic integrated into mock AMM.
 - Solana and Stellar versions.
+- End-to-end tests provided.
 
 Layout
 - `solana/`: Anchor programs (`batch`, `factory_stub`, `pair_stub`) plus devnet E2E tests and helper scripts.
