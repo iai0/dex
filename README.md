@@ -1,8 +1,9 @@
-# darkstar-public — security analysis workspace
+# security analysis workspace
 
 Purpose
-- Snapshot of Solana and Stellar batch/coinjoin implementations for security review.
+- Snapshot of batch/coinjoin implementations for security review.
 - Focus on core contract logic, on-chain data flows, and end-to-end token movement.
+- Solana and Stellar versions.
 
 Layout
 - `solana/`: Anchor programs (`batch`, `factory_stub`, `pair_stub`) plus devnet E2E tests and helper scripts.
